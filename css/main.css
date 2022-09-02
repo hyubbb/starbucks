@@ -411,7 +411,7 @@ section
 
 .notice .notice-line .inner {
   height: 62px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
 }
 

@@ -70,7 +70,7 @@ toTopEl.addEventListener("click", () => {
   gsap.to(window, .7, {
     scrollTo: 0
   })
-})
+});
 
 
 
