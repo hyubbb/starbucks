@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>orae</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Yeseva One", cursive;
+        background-color: hwb(33 86% 0%);
+      }
+
+      #contain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 120px; */
+        height: 300px;
+        border: 1px solid red;
+      }
+      #contain .in_box {
+        font-size: 80px;
+        border: 1px solid black;
+      }
+
+      header {
+        height: 120px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        display: block;
+      }
+
+      header > .inner {
+        display: block;
+        position: relative;
+        border: 1px solid green;
+      }
+
+      header > .inner > .logo {
+      }
+
+      .inner {
+        position: relative;
+        width: 1100px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="inner">1</div>
+    </header>
+    <div id="contain">
+      <div class="in_box">
+        we're <br />
+        on<br />
+        vacation
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let w_size = document.body.clientHeight;
+    window.addEventListener("click", (w_size) => {
+      var contain_height = document.getElementById("contain");
+      console.log(w_size);
+      contain_height.style.height = w_size + "px";
+      // console.log(contain_height);
+    });
+  </script>
+</html>
+`
